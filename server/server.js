@@ -6,7 +6,7 @@ var app = express();
 app.use(express.bodyParser());
 app.use(express.static(path.join(__dirname, '../client')));
 
-app.get('/employees/:id/reports', employees.findByManager);
+app.get('/employees/:id/reports', employees.findByChild);
 app.get('/employees/:id', employees.findById);
 app.get('/employees', employees.findAll);
 

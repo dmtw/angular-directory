@@ -8,8 +8,11 @@ angular.module('myApp', [
     'myApp.memoryServices'
 ]).
 config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/employees', {templateUrl: 'partials/employee-list.html', controller: 'EmployeeListCtrl'});
-    $routeProvider.when('/employees/:employeeId', {templateUrl: 'partials/employee-detail.html', controller: 'EmployeeDetailCtrl'});
-    $routeProvider.when('/employees/:employeeId/reports', {templateUrl: 'partials/report-list.html', controller: 'ReportListCtrl'});
-    $routeProvider.otherwise({redirectTo: '/employees'});
-}]);
+    $routeProvider.when('/children', {templateUrl: 'partials/children-list.html', controller: 'EmployeeListCtrl'});
+    $routeProvider.when('/children/:employeeId', {templateUrl: 'partials/child-detail.html', controller: 'EmployeeDetailCtrl'});
+    $routeProvider.when('/children/:employeeId/pickups', {templateUrl: 'partials/pickup-list.html', controller: 'ReportListCtrl'});
+    $routeProvider.when('/children/:employeeId/pickups/:employeeId', {templateUrl: 'partials/pickup-detail.html', controller: 'PickupDetailCtrl'});
+    $routeProvider.otherwise({redirectTo: '/children'});
+}]).run(function($rootScope, $location) {
+        $rootScope.location = $location;
+    });

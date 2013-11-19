@@ -1,0 +1,29 @@
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item left quarter">
+        <a class="topcoat-icon-button--quiet back-button" href="" ng-click="back()">
+            <span class="topcoat-icon topcoat-icon--back"></span>
+        </a>
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title">Child</h1>
+    </div>
+</div>
+
+<div class='details'>
+    <img ng-src="pics/{{employee.pic}}" class="employee-image">
+    <h1>{{employee.firstName}} {{employee.lastName}}</h1>
+    <h2>{{employee.title}}</h2>
+    <!--<h2>{{employee.city}}</h2>-->
+    <!--<h2>{{employee.department}}</h2>-->
+    <div class="topcoat-list__container scroller">
+        <ul class="topcoat-list list actions">
+             <li class="topcoat-list__item" ng-show="employee.childId"><a ng-click="go('children/' + employee.childId)"><p>View Child</p><p>{{employee.childName}}</p><div class="action-icon icon-manager"/></a></li>
+            <li class="topcoat-list__item" ng-show="employee.reports"><a ng-click="go('children/' + employee.id + '/pickups')"><p>View Pickups</p><p>{{employee.reports}}</p><div class="action-icon icon-reports"/></a></li>
+            <li class="topcoat-list__item" ng-show="employee.officePhone"><a href="tel:{{employee.officePhone}}"><p>Call Main Landline</p><p>{{employee.officePhone}}</p><div class="action-icon icon-call"/></a></li>
+            <li class="topcoat-list__item" ng-show="employee.cellPhone"><a href="tel:{{employee.cellPhone}}"><p>Call Main Cell</p><p>{{employee.cellPhone}}</p><div class="action-icon icon-call"/></a></li>
+            <li class="topcoat-list__item" ng-show="employee.cellPhone"><a href="sms:{{employee.cellPhone}}"><p>Main SMS</p><p>{{employee.cellPhone}}</p><div class="action-icon icon-sms"/></a></li>
+            <li class="topcoat-list__item" ng-show="employee.email"><a href="mailto:{{employee.email}}"><p>Main Email</p><p>{{employee.email}}</p><div class="action-icon icon-mail"/></a></li>
+        </ul>
+    </div>
+</div>
+                

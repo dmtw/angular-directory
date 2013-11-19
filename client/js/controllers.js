@@ -20,4 +20,7 @@ angular.module('myApp.controllers', [])
     }])
     .controller('ReportListCtrl', ['$scope', '$routeParams', 'Report', function ($scope, $routeParams, Report) {
         $scope.employees = Report.query({employeeId: $routeParams.employeeId});
+    }])
+    .controller('PickupDetailCtrl', ['$scope', '$routeParams', 'Employee', function ($scope, $routeParams, Employee) {
+    $scope.employee = Employee.get({employeeId: $routeParams.employeeId});
     }]);
