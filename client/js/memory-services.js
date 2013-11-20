@@ -14,7 +14,17 @@
             {"id": 9, "firstName": "Gary", "lastName": "Donovan", "childId": 2, "childName": "Julie Taylor", "reports": 0, "title": "Marketing Manager", "department": "Marketing", "cellPhone": "617-000-0009", "officePhone": "781-000-0009", "email": "gdonovan@fakemail.com", "city": "Boston, MA", "pic": "gary_donovan.jpg", "twitterId": "@fakegdonovan", "blog": "http://coenraets.org"},
             {"id": 10, "firstName": "Kathleen", "lastName": "Byrne", "childId": 2, "childName": "Ray Moore", "reports": 0, "title": "Sales Representative", "department": "Sales", "cellPhone": "617-000-0010", "officePhone": "781-000-0010", "email": "kbyrne@fakemail.com", "city": "Boston, MA", "pic": "kathleen_byrne.jpg", "twitterId": "@fakekbyrne", "blog": "http://coenraets.org"},
             {"id": 11, "firstName": "Amy", "lastName": "Jones", "childId": 1, "childName": "Ray Moore", "reports": 0, "title": "Step Mom", "department": "Parent", "cellPhone": "617-000-0011", "officePhone": "781-000-0011", "email": "ajones@fakemail.com", "city": "Boston, MA", "pic": "amy_jones.jpg", "twitterId": "@fakeajones", "blog": "http://coenraets.org"},
-            {"id": 12, "firstName": "Steven", "lastName": "Wells", "childId": 1, "childName": "John Williams", "reports": 0, "title": "Grand Dad", "department": "Other", "cellPhone": "617-000-0012", "officePhone": "781-000-0012", "email": "swells@fakemail.com", "city": "Boston, MA", "pic": "steven_wells.jpg", "twitterId": "@fakeswells", "blog": "http://coenraets.org"}
+            {"id": 12, "firstName": "Steven", "lastName": "Wells", "childId": 1, "childName": "John Williams", "reports": 0, "title": "Grand Dad", "department": "Other", "cellPhone": "617-000-0012", "officePhone": "781-000-0012", "email": "swells@fakemail.com", "city": "Boston, MA", "pic": "steven_wells.jpg", "twitterId": "@fakeswells", "blog": "http://coenraets.org"},
+            {"id": 13, "firstName": "Mark", "lastName": "Shuttle", "childId": 0, "childName": "", "reports": 4, "title": "Child", "department": "Haus18", "cellPhone": "617-000-0001", "officePhone": "781-000-0001", "email": "jking@fakemail.com", "city": "Boston, MA", "pic": "james_king.jpg", "twitterId": "@fakejking", "blog": "http://coenraets.org"},
+            {"id": 14, "firstName": "Peter", "lastName": "Werth", "childId": 0, "childName": "", "reports": 4, "title": "Child", "department": "Haus18", "cellPhone": "617-000-0001", "officePhone": "781-000-0001", "email": "jking@fakemail.com", "city": "Boston, MA", "pic": "james_king.jpg", "twitterId": "@fakejking", "blog": "http://coenraets.org"},
+            {"id": 15, "firstName": "Ryan", "lastName": "König", "childId": 0, "childName": "", "reports": 4, "title": "Child", "department": "Haus18", "cellPhone": "617-000-0001", "officePhone": "781-000-0001", "email": "jking@fakemail.com", "city": "Boston, MA", "pic": "james_king.jpg", "twitterId": "@fakejking", "blog": "http://coenraets.org"},
+            {"id": 16, "firstName": "Thomas", "lastName": "Muster", "childId": 0, "childName": "", "reports": 4, "title": "Child", "department": "Haus18", "cellPhone": "617-000-0001", "officePhone": "781-000-0001", "email": "jking@fakemail.com", "city": "Boston, MA", "pic": "james_king.jpg", "twitterId": "@fakejking", "blog": "http://coenraets.org"},
+            {"id": 17, "firstName": "George", "lastName": "Neulich", "childId": 0, "childName": "", "reports": 4, "title": "Child", "department": "Haus18", "cellPhone": "617-000-0001", "officePhone": "781-000-0001", "email": "jking@fakemail.com", "city": "Boston, MA", "pic": "james_king.jpg", "twitterId": "@fakejking", "blog": "http://coenraets.org"},
+
+
+
+
+
         ],
 
         findById = function (id) {

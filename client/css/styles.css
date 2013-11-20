@@ -2,6 +2,9 @@
     top: 10px;
     position: absolute;
 }
+.navpos{
+    margin-top:10px;
+}
 
 .scroller {
     overflow: auto;
